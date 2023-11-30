@@ -98,10 +98,19 @@ let name; // Step 1.
 name = 'John'; // Curious, the reserved word "name" has been deprecated. Step 2.
 admin = name; // Step 3.
 alert(alert); // function alert() { [native code] }
+
 // Giving the right name:
 /* 
     1. Create a variable with the name of our planet. How would you name such a variable?
     2. Create a variable to store the name of a current visitor to a website. How would you name that variable?
+*/
+// SOLUTION:
+let planetEarth; // I would name such a variable as `planetEarth` for more descriptive.
+let currentUser; // I would name that variable as `currentUser`.
+// Result:
+/*
+    let ourPlanetEarth = 'Earth';
+    let currentUserName = 'John';
 */
 // Uppercase const:
 /* 
