@@ -112,6 +112,7 @@ let currentUser; // I would name that variable as `currentUser`.
     let ourPlanetEarth = 'Earth';
     let currentUserName = 'John';
 */
+
 // Uppercase const:
 /* 
     Examine the following code:
@@ -126,4 +127,10 @@ let currentUser; // I would name that variable as `currentUser`.
     const BIRTHDAY = '22.12.2012'; // Make birthday uppercase?
     const AGE = someCode(BIRTHDAY); // Make age uppercase?
     ```
+*/
+// SOLUTION:
+/*
+From my perspective, make `birthday` uppercase is the best option and it's hard-coded based. And the `age` we could make lowercase (and camelCase if needed it) because it's not hard-coded base.
+- `birthday`: It's hard-coded, and the value is known prior to execution and directly written into the code.
+- `age`: It's a constant in a sense that it doesn't change through the code execution. Is evaluated in run-time.
 */
