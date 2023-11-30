@@ -37,3 +37,14 @@ let texting = 'Lorem Ipsum';
 console.log(x * y); // 16, and it works!
 // Or pure strings.
 console.log(texting + numberScientificNotation);
+// ------------------ //
+/* NOT A NUMBER or AKA NaN. */
+// Represents that the number is not a legal number.
+let notANumber = 'Pineapples';
+let z = 5;
+console.log(z * notANumber); // NaN.
+// To verify if is a NaN:
+console.log(isNaN(z * notANumber)); // TRUE.
+// The type of NaN:
+console.log(typeof(NaN)); // Number.
+// ------------------ //
