@@ -79,3 +79,36 @@ const COLOR_ORANGE = "#FF7F00";
     - When reading your code, is much more meaningful.
     For `hard-coded` values, use constants UPPERCASE.
 */
+
+/* Name things right! */
+// A variable name should have a clean, obvious meaning, describing the data that it stores.
+// Remember we read more than write. I think we could use the rule: 80/20.
+
+/* TASKS! */
+// Working variables:
+/* 
+    1. Declare two variables: `admin` and `name`.
+    2. Assign the value "John" to `name`.
+    3. Copy the value from `name` to `admin`.
+    4. Show the value of `admin` using `alert` (must output "John").
+*/
+// Giving the right name:
+/* 
+    1. Create a variable with the name of our planet. How would you name such a variable?
+    2. Create a variable to store the name of a current visitor to a website. How would you name that variable?
+*/
+// Uppercase const:
+/* 
+    Examine the following code:
+    ```
+    const birthday = '22.12.2012';
+    const age = someCode(birthday);
+    ```
+    Here we have a constant `birthday` for the date, and also the `age` constant.
+    The `age` is calculated from `birthday` using `someCode()` which means a function call that we didn't explain yet (we will soon!), but the details don't matter here, the point is that `age` is calculated somehow based on the `birthday`.
+    Would it be right to use upper case for `birthday`? For `age`? Or even for both?
+    ```
+    const BIRTHDAY = '22.12.2012'; // Make birthday uppercase?
+    const AGE = someCode(BIRTHDAY); // Make age uppercase?
+    ```
+*/
