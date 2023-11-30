@@ -92,6 +92,12 @@ const COLOR_ORANGE = "#FF7F00";
     3. Copy the value from `name` to `admin`.
     4. Show the value of `admin` using `alert` (must output "John").
 */
+// SOLUTION:
+let admin; // Step 1.
+let name; // Step 1.
+name = 'John'; // Curious, the reserved word "name" has been deprecated. Step 2.
+admin = name; // Step 3.
+alert(alert); // function alert() { [native code] }
 // Giving the right name:
 /* 
     1. Create a variable with the name of our planet. How would you name such a variable?
