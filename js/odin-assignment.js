@@ -42,3 +42,7 @@ and read its value in the same line.
 // Add a sequence of 6 different numbers together... How could I do that?
 console.log(23, 132, 55, 1213, 4, 77);
 // I think is done!
+
+// Exercise N° 3:
+// Print the solution to the following equation: (4 + 6 + 9) / 77!
+console.log((4 + 6 + 9) / 77); // ~= 0.24675
