@@ -24,3 +24,16 @@ let floatingNumber = 3.141516; // It's not PI number.
 console.log(numberScientificNotation);
 // Floating number:
 console.log(floatingNumber);
+// ------------------ //
+/* ADDING NUMBERS AND STRING */
+// Numbers are adding.
+// String are concatenated.
+// You are going to use this operator: "+".
+// Variables for testing purposes:
+let x = 4;
+let y = '4';
+let texting = 'Lorem Ipsum';
+// Look! You can multiply with `strings`.
+console.log(x * y); // 16, and it works!
+// Or pure strings.
+console.log(texting + numberScientificNotation);
