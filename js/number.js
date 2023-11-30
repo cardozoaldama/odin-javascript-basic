@@ -6,7 +6,7 @@
 console.log('NUMBERS:');
 // ------------------ //
 /* You can use arithmetic with variables, literals, or expressions. */
-let a = 56;     // Variable.
+// let a = 56;     // Variable.
 let b = 22;     // Variable.
 let c = 3;      // Variables.
 // The result:

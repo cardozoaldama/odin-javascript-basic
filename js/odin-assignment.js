@@ -46,3 +46,13 @@ console.log(23, 132, 55, 1213, 4, 77);
 // Exercise N° 3:
 // Print the solution to the following equation: (4 + 6 + 9) / 77!
 console.log((4 + 6 + 9) / 77); // ~= 0.24675
+
+// Exercise N° 4:
+/*
+Let’s use variables!
+    - Type this statement at the top of the script tag: let a = 10
+    - In the console console.log(a) should print 10
+    - Try the following in the console: 9 * a
+    - And this: let b = 7 * a (returns undefined *) and then console.log(b)
+*/
+// We need to use our <script></script>, so ups...
