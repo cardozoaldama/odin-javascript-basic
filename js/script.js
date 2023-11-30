@@ -63,3 +63,19 @@ let APPLE; // Also, different.
 // An assignment without `use strict`:
 num = 5; // This is a bad practice...
 alert(num);
+
+/* CONSTANTS */
+// You can declare a constant variable, use `const` instead of `let`:
+const myBirthday = '28.04.2001'; // This cannot reassigned.
+// myBirthday = 'xd'; Uncaught TypeError: Assignment to constant variable.
+// Wanna be untouchable? Use `const`!
+// AND USE UPPERCASE CONSTANTS!
+// Use colors here:
+const COLOR_BLUE = "#00F";
+const COLOR_ORANGE = "#FF7F00";
+/* 
+    - This is much easier to remember.
+    - It's much easier to mistype the hexadecimal than the `const`.
+    - When reading your code, is much more meaningful.
+    For `hard-coded` values, use constants UPPERCASE.
+*/
