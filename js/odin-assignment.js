@@ -37,3 +37,8 @@ and read its value in the same line.
 // Exercise N° 1:
 // We must type `console.log(23 + 97);` in our HTML file.
 // It's done!
+
+// Exercise N° 2:
+// Add a sequence of 6 different numbers together... How could I do that?
+console.log(23, 132, 55, 1213, 4, 77);
+// I think is done!
