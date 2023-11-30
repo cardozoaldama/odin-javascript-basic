@@ -34,3 +34,6 @@ however for now it is good to remember that a declaration with an assignment
 and read its value in the same line.
 */
 
+// Exercise N° 1:
+// We must type `console.log(23 + 97);` in our HTML file.
+// It's done!
