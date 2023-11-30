@@ -56,3 +56,13 @@ Let’s use variables!
     - And this: let b = 7 * a (returns undefined *) and then console.log(b)
 */
 // We need to use our <script></script>, so ups...
+
+// Exercise N° 5:
+/*
+5. You should be getting the hang of this by now… try this sequence:
+    - Declare a constant variable MAX with the value 57
+    - Set another variable actual to MAX - 13
+    - Set another variable percentage to actual / MAX
+    - If you type percentage in the console and press Enter you should see a value like 0.7719
+*/
+// We should write the code on my script tag again.
