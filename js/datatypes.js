@@ -27,3 +27,20 @@ console.log(9007199254740991 + 1); // 9007199254740992
 console.log(9007199254740991 + 2); // 9007199254740992
 // Invoke the bigInt using the "n" letter appending to the end of your integer!
 console.log(9007199254740991n); // Now that number is bigInt!
+
+/* STRINGS! */
+// Using strings is easy, you can use them by adding:
+/**
+ * - Simple quotes: ''
+ * - Double quotes: ""
+ * - Backticks: ``
+ */
+// Practically simple and double quotes is that, they are the same in JavaScript.
+// However, backticks are "extended functionality" quotes. You can embed variables with them.
+let firstName = 'John';
+// Embed a variable:
+console.log(`Hello, ${firstName}!`); // Hello, John!
+// Embed an expression:
+console.log(`The result is ${54 / 34.00}`); // The result is that.
+// The ${} becomes a part of the string.
+// Do we have "char" data type? Nope, we don't have it here.
