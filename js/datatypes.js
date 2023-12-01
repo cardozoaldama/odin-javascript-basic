@@ -20,3 +20,10 @@ console.log(notANumber);        // Printing our NaN.
 console.log(number1 + notANumber); // Trying adding "number1" plus "notANumber".
 console.log(notANumber ** 0);       // Probably the result will be the number: 0
 // All of this is safer, for now. Mathematical operations in JavaScript is safe, mostly of the time.
+
+/* BIGINT */
+// The bigInt is special, because the default "number" data type is kinda limited (not at all) because it only contains a max and a min amount of data (default int).
+console.log(9007199254740991 + 1); // 9007199254740992
+console.log(9007199254740991 + 2); // 9007199254740992
+// Invoke the bigInt using the "n" letter appending to the end of your integer!
+console.log(9007199254740991n); // Now that number is bigInt!
