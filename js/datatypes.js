@@ -52,3 +52,12 @@ let isAgeFieldChecked = false; // No, ageFieldChecked.
 // Also, use some calculus here:
 let isNumberGreater = 16 > 36; // This case, returns false.
 console.log(isNumberGreater); // False.
+
+/* THE "NULL" VALUE */
+// The special "null" value does not belong to any of the "types".
+// It forms a separate type of its own which contains only the "null" value:
+let ages = null; // Literally, NULL. 
+/* "Null" it is not a reference to a non-existing object or a null pointer. 
+It's just a special value which represents "nothing", "empty", or "value unknown"!
+*/
+// The ages is unknown.
