@@ -44,3 +44,11 @@ console.log(`Hello, ${firstName}!`); // Hello, John!
 console.log(`The result is ${54 / 34.00}`); // The result is that.
 // The ${} becomes a part of the string.
 // Do we have "char" data type? Nope, we don't have it here.
+
+/* BOOLEAN */
+// The "logic" type. And it only contains two values: FALSE and TRUE.
+let isNameFieldChecked = true; // Yes, nameFieldChecked.
+let isAgeFieldChecked = false; // No, ageFieldChecked.
+// Also, use some calculus here:
+let isNumberGreater = 16 > 36; // This case, returns false.
+console.log(isNumberGreater); // False.
