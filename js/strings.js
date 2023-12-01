@@ -20,3 +20,13 @@ String charAt()
 String charCodeAt()
 String split()
 */
+
+// Initial variables:
+let firstName = 'Calamardo';
+let lastName = 'Calamarity';
+let abecedary = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+// Normally will print:
+console.log(firstName, lastName);
+console.log(abecedary);
+// String length:
+console.log(abecedary.length); // This abecedary has 26 letters.
