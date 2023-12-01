@@ -30,3 +30,10 @@ console.log(firstName, lastName);
 console.log(abecedary);
 // String length:
 console.log(abecedary.length); // This abecedary has 26 letters.
+
+/* Extracting string parts: */
+// Three methods: slice(start, end), substring(start, end), substr(start, length);
+// Let's go!
+console.log(firstName.slice(0, 7));  // It returns "Calamar". The seven (end) is not included.
+console.log(lastName.substring(0, 7)); // It returns... "Calamar" too!
+console.log(abecedary.substr(0, 7)); // It returns: ABCDEFG. It is deprecated.
