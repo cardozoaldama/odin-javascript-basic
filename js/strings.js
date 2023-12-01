@@ -53,3 +53,10 @@ newWelcomeBack = welcomeBack.replace(/PAL/i, 'backend'); // Without using quotes
 console.log(newWelcomeBack); // Now it works! Welcome backend, friend!
 // You can also use "replaceAll()" and JavaScript introduces it in 2021.
 console.log(welcomeBack.replaceAll('friend', 'FRIEND')); // For me, it's working.
+
+/* WORKING WITH LOWERCASE AND UPPERCASE */
+// We have these: toLowerCase() and toUpperCase() and they are great for converting our strings.
+let texting1 = 'Lorem Ipsum!';
+let textingLower = texting1.toLowerCase(); // It's a method without receiving arguments or parameters.
+let textingUpper = texting1.toUpperCase(); // Also, a method without receiving arguments or parameters.
+console.log(textingLower, textingUpper); // Printing both variables.
