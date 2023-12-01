@@ -61,3 +61,10 @@ let ages = null; // Literally, NULL.
 It's just a special value which represents "nothing", "empty", or "value unknown"!
 */
 // The ages is unknown.
+
+/* THE "UNDEFINED" VALUE */
+// Another special value and it makes a type of its own.
+// Meaning that "a value is not assigned".
+// If you declare a variable and you don't assigned a value on it, of course it will be: UNDEFINED!
+let agesUndefined = undefined;
+console.log(agesUndefined); // Of course, undefined.
