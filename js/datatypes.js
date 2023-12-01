@@ -68,3 +68,9 @@ It's just a special value which represents "nothing", "empty", or "value unknown
 // If you declare a variable and you don't assigned a value on it, of course it will be: UNDEFINED!
 let agesUndefined = undefined;
 console.log(agesUndefined); // Of course, undefined.
+
+/* OBJECTS AND SYMBOLS */
+// Objects are special.
+// They are used to store collections of data and more complex entities.
+// The "symbol" is used to create unique identifiers for objects.
+// They are a kind of complex just right here, but that is our TODO!
