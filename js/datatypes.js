@@ -74,3 +74,20 @@ console.log(agesUndefined); // Of course, undefined.
 // They are used to store collections of data and more complex entities.
 // The "symbol" is used to create unique identifiers for objects.
 // They are a kind of complex just right here, but that is our TODO!
+
+/* THE TYPEOF OPERATOR */
+// It returns to you the type of the operand.
+// Example:
+typeof undefined; // "Undefined!"
+typeof 0; // It's "number"
+typeof 10n; // Our bigInit.
+typeof true; // It's "boolean"
+typeof "foo"; // It's "string"
+typeof Symbol("id"); // "symbol" one.
+typeof Math; // An "object"
+typeof null; // Also, an "object"
+typeof alert; // "function" one.
+// Math is a built-in object that provides mathematical operations.
+// Null is not an object, by the way. It's a special value of its own. Typeof, you are wrong here.
+// "alert" is a function, that is correct. However, typeof behavior is not correct for some reason.
+// typeof is an operator, not a function. Remember that.
