@@ -64,3 +64,22 @@ else
     console.log('Okay, they are kind of...');
 }
 // End of if-else.
+
+// Now we are going to learn about else if statement.
+console.log('If, else if, else...');
+if (value1 > value2)
+{
+    // If it is true, you are going down here.
+    console.log(value1, '>', value2);
+}
+else if (value1 === value2)
+{
+    // If it is false up side, it will be down here if it is true.
+    console.log(value1, ' is different than ', value2);
+}
+else
+{
+    // If everything is false, here will be executed:
+    console.log('Everything is false.');
+}
+// The end of else, if.
