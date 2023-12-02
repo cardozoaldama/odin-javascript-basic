@@ -40,7 +40,8 @@ console.log(Boolean('5' !== 5)); // True.
 // We have different types of conditions: if, else, else if, and switch.
 console.log('CONDITIONALS IF, ELSE, AND SWITCH');
 // The first instruction is "if":
-if (valueUndefined == valueNull) {
+if (valueUndefined == valueNull) 
+{
     // If the condition is true, of course this block of code will be executed.
     console.log('Yes, your', valueUndefined, 'is equal to', valueNull);
 }
@@ -51,3 +52,15 @@ if (hour < 18) {
 }
 // You need to declare those variables first.
 */
+// Now, the second instruction is "else" with "if":
+if (valueNull === valueUndefined) 
+{
+    // You will be executed if the conditions is true.
+    console.log('They are the same in something, but not equal strictly.');
+}
+else
+{
+    // You will be executed anyway if nothing is true.
+    console.log('Okay, they are kind of...');
+}
+// End of if-else.
