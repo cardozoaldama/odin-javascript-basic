@@ -35,3 +35,19 @@ console.log(Boolean(null === undefined)); // Now it's false.
 console.log('Strict equal and distinct');
 console.log(Boolean('5' === 5)); // False.
 console.log(Boolean('5' !== 5)); // True.
+
+/* CONDITIONALS! */
+// We have different types of conditions: if, else, else if, and switch.
+console.log('CONDITIONALS IF, ELSE, AND SWITCH');
+// The first instruction is "if":
+if (valueUndefined == valueNull) {
+    // If the condition is true, of course this block of code will be executed.
+    console.log('Yes, your', valueUndefined, 'is equal to', valueNull);
+}
+// A little exercise:
+/* 
+if (hour < 18) {
+    greeting = 'Good day';
+}
+// You need to declare those variables first.
+*/
