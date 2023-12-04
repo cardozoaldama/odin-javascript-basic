@@ -102,3 +102,20 @@ console.log('Returns null: null && 5 (', null && 5, ')');
 console.log('Returns 0: 0 && "what?": (', 0 && "what?", ')');
 // Pay attention, please: Do not replace "if" with AND and OR. Even if the shorter way to write "if" in your sentences.
 // Remember, AND has high priority than OR.
+
+/* The NOT operator (!) */
+// Returns the inverse value and converts your operand to boolean type.
+console.log('The NOT operator:')
+// For instance:
+console.log(!true);     // It returns "FALSE".
+console.log(!0);        // It returns "TRUE".
+// A double NOT is sometimes used for converting a value to boolean type:
+console.log(!!'I was an empty string!');        // It returns TRUE.
+console.log(!!null);                            // Now you are basically FALSE.
+// Here, you can use a built-in BOOLEAN function:
+console.log(Boolean('I was an empty string!')); // True.
+console.log(Boolean(null));                     // False.
+// In this case, the operator NOT is executed first and is the highest of all logical operators.
+
+// END
+/***********************/
