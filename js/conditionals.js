@@ -83,3 +83,24 @@ else
     console.log('Everything is false.');
 }
 // The end of else, if.
+
+/* THE SWITCH STATEMENT! */
+// A switch statement can replace multiple "if" checks.
+// It gives a more descriptive way to compare a value with multiple variants. 
+let sumNumbers = 2 + 2;
+// Switch Case:
+switch(sumNumbers) // It allows us to add arbitrary expressions too!
+{
+    case 3:     // If sumNumbers === 3
+        console.log('Too small!');
+        break;  // Break and don't ask for others below you.
+    case 4:     // If sumNumbers === 4
+        console.log('Exactly!');
+        break;  // Again, break it down!
+    case sumNumbers + 1:     // If sumNumbers + 1 === 5
+        console.log('Too big...');
+        break;  // Break It Down Again!
+    default:    // It's like "else".
+        console.log('It\'s over...');
+}
+// End of Switch statement.
