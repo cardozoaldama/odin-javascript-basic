@@ -47,3 +47,58 @@ console.log('The first one:', result); // The first one will be returned.
 // When the OR executed the value "TRUE", without even touching the others arguments:
 "use strict";
 console.log('' || 'printed' || 'not printed'); // The second value will printed.
+
+/* THE AND OPERATOR (&&) */
+// It will return you TRUE, if everything is TRUE. Otherwise, it will be FALSE.
+console.log('The AND operator');
+console.log(trueValue && trueValue);        // True.
+console.log(trueValue && falseValue);       // False.
+console.log(falseValue && trueValue);       // False.
+console.log(falseValue && falseValue);      // False.
+// An example using "if" statement.
+let hour = 5;       // 05:00 PM
+let minute = 30;    // 00:30 PM
+if (hour == 5 && minute == 30)
+{
+    // This will be TRUE anyway.
+    console.log('The time is: 05:30 PM');
+}
+// Also, you can evaluated with numbers, just as with OR operator:
+if (1 && 0 && 1)
+{
+    // This result in FALSE, so it won't executed here.
+    console.log('No truly?');
+    /*
+    ———————————No truly?———————————
+    ⠀⣞⢽⢪⢣⢣⢣⢫⡺⡵⣝⡮⣗⢷⢽⢽⢽⣮⡷⡽⣜⣜⢮⢺⣜⢷⢽⢝⡽⣝
+    ⠸⡸⠜⠕⠕⠁⢁⢇⢏⢽⢺⣪⡳⡝⣎⣏⢯⢞⡿⣟⣷⣳⢯⡷⣽⢽⢯⣳⣫⠇
+    ⠀⠀⢀⢀⢄⢬⢪⡪⡎⣆⡈⠚⠜⠕⠇⠗⠝⢕⢯⢫⣞⣯⣿⣻⡽⣏⢗⣗⠏⠀
+    ⠀⠪⡪⡪⣪⢪⢺⢸⢢⢓⢆⢤⢀⠀⠀⠀⠀⠈⢊⢞⡾⣿⡯⣏⢮⠷⠁⠀⠀
+    ⠀⠀⠀⠈⠊⠆⡃⠕⢕⢇⢇⢇⢇⢇⢏⢎⢎⢆⢄⠀⢑⣽⣿⢝⠲⠉⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⡿⠂⠠⠀⡇⢇⠕⢈⣀⠀⠁⠡⠣⡣⡫⣂⣿⠯⢪⠰⠂⠀⠀⠀⠀
+    ⠀⠀⠀⠀⡦⡙⡂⢀⢤⢣⠣⡈⣾⡃⠠⠄⠀⡄⢱⣌⣶⢏⢊⠂⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⢝⡲⣜⡮⡏⢎⢌⢂⠙⠢⠐⢀⢘⢵⣽⣿⡿⠁⠁⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠨⣺⡺⡕⡕⡱⡑⡆⡕⡅⡕⡜⡼⢽⡻⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⣼⣳⣫⣾⣵⣗⡵⡱⡡⢣⢑⢕⢜⢕⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⣴⣿⣾⣿⣿⣿⡿⡽⡑⢌⠪⡢⡣⣣⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    —————————————————————————————
+    */
+}
+// AND finds the first falsy value:
+result = falseValue && trueValue && trueValue;
+/**
+ * Evaluates operands from left to right.
+ * For each operand, converts it to a boolean. If the result is FALSE, stops and returns the original value of that operand.
+ * If all operands have been evaluated (all were truthy for example), returns the last operand.
+ * The difference between AND and OR is that, the AND returns the first falsy value and the OR returns the first truly value.
+ */
+// The second operand is returned:
+console.log('Returns 0: 1 && 0 (', 1 && 0, ')');
+console.log('Returns 5: 1 && 5 (', 1 && 5, ')');
+// The first operand is returned:
+console.log('Returns null: null && 5 (', null && 5, ')');
+console.log('Returns 0: 0 && "what?": (', 0 && "what?", ')');
+// Pay attention, please: Do not replace "if" with AND and OR. Even if the shorter way to write "if" in your sentences.
+// Remember, AND has high priority than OR.
