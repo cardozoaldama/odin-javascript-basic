@@ -34,6 +34,30 @@
       // Again, use Math object with its "pow" method:
       return Math.pow(num, 3);
     }
+    // Factorial of a number:
+    function factorial(num)
+    {
+      // A function ends when a return statement is invoke or run.
+      // Remember to return numbers or data.
+      // If a number is less than zero, it's undefined:
+      if (num < 0) return undefined;
+      // If a number is equal to zero, it will be just one:
+      if (num === 0) return 1;
+      // If "num" is greater than 0:
+      // Subtract your num minus one and assign to "x":
+      let x = num - 1;
+      // While your "x" is greater than 1, do this:
+      while (x > 1)
+      {
+        // Multiply your "num" to "x":
+        num *= x;
+        // And subtract your "x" by one:
+        x--;
+        // The "while()" statement ends when "x" is equal or less than 1.
+      }
+      // Returns your number:
+      return num;
+    }
   </script>
 </body>
 </html>
