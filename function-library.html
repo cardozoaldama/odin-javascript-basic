@@ -12,8 +12,9 @@
   </style>
   </head>
 <body>
-
+  <!-- An input text that the user enter a number, or a sequence of numbers: -->
   <input class="numberInput" type="text">
+  <!-- The "paragraph" will be the result of the "calc" functions: -->
   <p></p>
 
   <script>
@@ -58,6 +59,32 @@
       // Returns your number:
       return num;
     }
+    // EVENT LISTENERS HANDLER:
+    // Adding an event listener of type "change":
+    // Also, using an anonymous function of type 'arrow':
+    input.addEventListener('change', () => {
+      // Creating a constant number with float date type:
+      // We need the value of the input.
+      const num = parseFloat(input.value);
+      // If is not a number our "num" variable:
+      if (isNaN(num))
+      {
+        // TRUE
+        // In the paragraph, we put this text content:
+        // By the way, para.textContent, our "textContent" is an attribute.
+        para.textContent = 'You need to enter a number!';
+      }
+      else
+      {
+        // FALSE
+        // Square Function:
+        para.textContent = `${num} squared is ${squared(num)}`;
+        // Cube Function:
+        para.textContent += `${num} cubed is ${cubed(num)}`;
+        // Factorial Function:
+        para.textContent += `${num} factorial is ${factorial(num)}`;
+      }
+    });
   </script>
 </body>
 </html>
