@@ -19,6 +19,43 @@
         4. Write a function called lastLetter that takes a string and returns the very last letter of that string:
             lastLetter("abcd") should return "d"
         */
+
+        // Exercise Number 1:
+        function add7(number)
+        {
+            // It takes a number and returns that number plus seven.
+            return number + 7;
+        }
+
+        // Exercise Number 2:
+        function multiply(x, y)
+        {
+            // It takes two numbers and returns the product of those numbers.
+            // Let's use variables:
+            let product = x * y;
+            return product;
+        }
+
+        // Exercise Number 3:
+        function capitalize(text)
+        {
+            // It takes one argument and it is a string.
+            // First, take the first character and then convert it to uppercase.
+            // Finally assign that value into the "capitalized".
+            let capitalized = text.charAt(0).toUpperCase();
+            // Return the single letter of "capitalized" and concatenate the text from the third character until the end.
+            return capitalized + text.slice(1);
+        }
+
+        // Exercise Number 4:
+        function lastLetter(text)
+        {
+            // It returns the lastLetter of a string.
+            // First alternative:
+            // return text.charAt(text.length - 1);
+            // Second alternative:
+            return text.slice(-1);
+        }
     </script>
 </body>
 </html>
