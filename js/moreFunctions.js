@@ -47,7 +47,16 @@ let randomNumber2 = () => Math.random;
 
 // -----------
 
+// --------------
+// Now... Functions inside to other functions:
 // The famous event listener for click. Easy to understand:
+// That "function()" without any name is called anonymous function.
 document.addEventListener('click', function() {
     console.log('CLICK');
 })
+
+// The arrow function:
+document.addEventListener('click', () => console.log('CLICK'));
+// That function is the same as the other up there.
+
+// -----------
