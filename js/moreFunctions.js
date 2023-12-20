@@ -17,11 +17,20 @@ let sum2 = (a, b) => a + b;
 
 // ---------
 
+// -----------
 // Returning a boolean value there.
+// This is the regular function:
 function isPositive(number)
 {
     return number >= 0;
 }
+
+// Now the arrow function called "isPositive2":
+let isPositive2 = number => number >= 0;
+// When we have only one argument, we can omit the parenthesis.
+// And it is still working!
+
+// -----------
 
 // Returning a random number from 0 to less than 1.
 function randomNumber()
