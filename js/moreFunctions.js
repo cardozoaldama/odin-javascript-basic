@@ -96,3 +96,10 @@ class Person
         100);
     }
 }
+
+// Declaration and assignment:
+// Create an object "person" from the class Person():
+let person = new Person('Bobby');
+// Print these values for "person":
+person.printNameArrow();
+person.printNameFunction();
