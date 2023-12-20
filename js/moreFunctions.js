@@ -32,11 +32,20 @@ let isPositive2 = number => number >= 0;
 
 // -----------
 
+// -------------
 // Returning a random number from 0 to less than 1.
+// Regular function for "randomNumber":
 function randomNumber()
 {
     return Math.random;
 }
+
+// The arrow function version:
+let randomNumber2 = () => Math.random;
+// When we don't have any arguments, please use empty parenthesis.
+// The rest is the same as we saw.
+
+// -----------
 
 // The famous event listener for click. Easy to understand:
 document.addEventListener('click', function() {
