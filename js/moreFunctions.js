@@ -60,3 +60,39 @@ document.addEventListener('click', () => console.log('CLICK'));
 // That function is the same as the other up there.
 
 // -----------
+
+// EXAMPLES OF USING THE ARROW FUNCTION:
+// This is a "Person" class:
+// I didn't see OOP just yet...
+class Person
+{
+    // This is a constructor?
+    constructor(name)
+    {
+        // We are going to use the variable with itself...
+        this.name = name;
+    }
+    // Print the name of the arrow...
+    printNameArrow()
+    {
+        // The setTimeout() function using arrow function:
+        setTimeout(() => 
+        {
+            // Inside of the arrow function:
+            console.log('Arrow:', this.name);
+        },
+        // Outside of the arrow function:
+        100);
+    }
+    printNameFunction()
+    {
+        // This setTimeout() are using anonymous function():
+        setTimeout(function()
+        {
+            // Inside of this anonymous function:
+            console.log('Function:', this.name);
+        },
+        // Outside of the anonymous function:
+        100);
+    }
+}
