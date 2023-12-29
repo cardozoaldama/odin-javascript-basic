@@ -9,3 +9,5 @@ Then I will create another repository for more advance stuff. It's free!
 ## New changes soon about theory
 
 About what theory? Simple, it is about Problem Solving and Understanding Errors.
+
+The Problem Solving is important when you want to develop something, it is an important skill. 
