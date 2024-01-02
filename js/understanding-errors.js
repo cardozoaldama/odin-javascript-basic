@@ -47,3 +47,13 @@ print();
 /**
  * The Stack Trace lets you trace the evolution of an error back to its origin, which here is the declaration of add();
  */
+
+/* Common types of errors */
+// Syntax error:
+function helloWorld()
+{
+    // My editor right a way tells me to put ";", but in reality is ():
+    console.log "Hello World"
+    // The example will throw the following error:
+    // Uncaught SyntaxError: unexpected token: string literal.
+}
