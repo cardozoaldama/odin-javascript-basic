@@ -57,3 +57,6 @@ function helloWorld()
     // The example will throw the following error:
     // Uncaught SyntaxError: unexpected token: string literal.
 }
+
+// Reference Error:
+// Your variable doesn't exist or it has been spelled incorrectly.
