@@ -33,7 +33,7 @@ function print()
 }
 
 // Trying to use the function print();
-print();
+// print();
 
 // These are the errors:
 /**
@@ -53,10 +53,30 @@ print();
 function helloWorld()
 {
     // My editor right a way tells me to put ";", but in reality is ():
-    console.log "Hello World"
+    // console.log "Hello World"
     // The example will throw the following error:
     // Uncaught SyntaxError: unexpected token: string literal.
 }
 
 // Reference Error:
 // Your variable doesn't exist or it has been spelled incorrectly.
+
+// Type Error:
+// Per MDN, a TypeError may be thrown when:
+/**
+ * An operand or argument passed to a function is incompatible with the type expected by that operator or function;
+ * Or when attempting to modify a value that cannot be changed. (Constants)
+ * Or when attempting to use a value in an inappropriate way.
+ */
+
+const str1 = 'Hello';
+str1 = 'Trying to change you...';
+// Throws an error: Uncaught TypeError: invalid assignment to const 'str1;
+const str2 = 'JavaScript!';
+const message = str1.push(str2);
+
+// The error message will be:
+/**
+ * Uncaught TypeError: str1.push is not a function;
+ * Probably push() is certainly a function, but it is not a String method, it is an Array method.
+ */
