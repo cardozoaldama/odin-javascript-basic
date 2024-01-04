@@ -33,3 +33,27 @@ const sumArray = function (array) {
 sumArray([2, 2, 2]);
 
 // This good example is great for long term maintain support. Also, it is meaningful.
+
+/* Naming functions and variables */
+// Get inspiration with these functions:
+/**
+ * function getPersonAge();
+ * function getPlayerScore();
+ * function getEnemyWater(); XDXD
+ */
+// Variables: Should always begin with a noun or an adjective.
+// Functions: Should always begin with a verb.
+
+const numberOfThings = 9999;
+const myName = 'Fer';
+const selected = false;
+
+function getCount() {
+    return numberOfThings;
+}
+
+function isSelected(booleanValue) {
+    // Why? Because we want to update!
+    booleanValue = false;
+    return booleanValue;
+}
