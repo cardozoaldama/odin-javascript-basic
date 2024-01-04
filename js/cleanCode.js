@@ -65,3 +65,37 @@ const MILLISECONDS_PER_HOUR = 60 * 60 * 1000;   // Could be 3,600,000
 // Multiply the time value by 3,600,000;
 // Much better...
 setTimeout(stopTimer, MILLISECONDS_PER_HOUR);
+
+/* About comments... */
+// This is a real one... Honestly, I abuse the comments because is fun.
+// Comments are great, but we cannot abuse them. Remember that code is actually comments.
+// We do not need to comment our code mostly because we are using Git.
+// Our comments cannot track changes, our dear Git does.
+// Also, we can eliminate our old and ancient codes if we need it instead of comment them.
+
+// Function in use:
+let aVariable = isSelected(true);
+// We don't longer use these:
+// isSelectedOld();
+// isSelectedAncient();
+// isSelectedForFun();
+
+// In our commentary, we need to tell why and not how.
+// We use pseudo code apart from our main code, so we need to tell why of our actually code.
+// Also, if our code is readable enough, we do not need comments at all!
+
+// This function increments the value of index to move to the next element.
+function moveToNextElement() {
+    index = index + 1;
+    return index;
+}
+// We can delete the comment because the function is itself explanatory.
+
+// Also, we can explain formulas in our readable code, just like this one:
+function calculateBMI(height, weight) {
+    // The formula for BMI is weight in kilograms divided by height in meters squared.
+    const heightInMeters = height / 100;
+    const bmi = weight / (heightInMeters * heightInMeters);
+    return bmi;
+    // This comment helps to refresh the reader on how BMI is calculated in plain English.
+}
