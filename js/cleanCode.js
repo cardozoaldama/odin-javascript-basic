@@ -57,3 +57,11 @@ function isSelected(booleanValue) {
     booleanValue = false;
     return booleanValue;
 }
+
+/* Using searchable and immediately understandable names. */
+// Using values as undeclared variables is not a good idea because remember you can forget stuff and things and so on.
+// This is a good idea:
+const MILLISECONDS_PER_HOUR = 60 * 60 * 1000;   // Could be 3,600,000
+// Multiply the time value by 3,600,000;
+// Much better...
+setTimeout(stopTimer, MILLISECONDS_PER_HOUR);
