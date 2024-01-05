@@ -60,3 +60,24 @@ console.log(gtaLocations);
 // I think we can use console.table() to access the array.
 console.table(gtaLocations);
 // This kind of print in console is more effective with arrays than the actual console.log();
+
+/* Arrays are objects */
+// For me, right now, it is not a surprise. Arrays are a special type of objects.
+// Use `typeof` operator in JavaScript that returns "object" for arrays.
+// However, arrays use numbers to access its elements, because objects use names to access its members.
+
+// An example of an array:
+const someone = ['John', 'Smith', 66];
+// You can access someone's name or last name with numbers.
+console.log(someone[0], someone[1]);        // John Smith
+// An example of an object:
+const box = {firstName: 'Alex', lastName: 'Smith', age: 46};
+// You can access box's name or last name by members:
+// I think you can print like this:
+console.log(box.firstName, box.lastName);
+// I wanna play something, and it is actually rewrite those values.
+someone[0] = 'Alex';
+box.firstName = 'John';
+// Now, print the results.
+console.log(someone[0], someone[1]);
+console.log(box.firstName, box.lastName);
