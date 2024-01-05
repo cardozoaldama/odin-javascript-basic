@@ -53,3 +53,10 @@ console.log(gtaCitizen[0]);
 // Use the method `toString()` that converts an array to a string of (comma separated) array values.
 // Using console.log() should work for now.
 console.log(gtaWeapons.toString());
+
+/* Access the Full Array */
+// You can access the full array by referring to the array name.
+console.log(gtaLocations);
+// I think we can use console.table() to access the array.
+console.table(gtaLocations);
+// This kind of print in console is more effective with arrays than the actual console.log();
