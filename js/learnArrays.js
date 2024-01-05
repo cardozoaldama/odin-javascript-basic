@@ -240,3 +240,4 @@ console.table(gtaWeapons.slice(2));
 // This method does not remove any elements from the source array.
 // You can define the start and the end of your slice.
 console.table(gtaBox.slice(0, 2));
+// That is all for arrays, soon we gonna learn about loops.
