@@ -122,3 +122,18 @@ console.log(gtaCars[434]);      // Undefined.
 const testingUndefinedArray = ['A', 'B', 'C', 'D'];
 testingUndefinedArray[44] = 'Yes';
 console.table(testingUndefinedArray); // From 4 to 43 is undefined. XD
+
+/* Associative Arrays */
+// Many programming languages support arrays with named indexes.
+// However, JavaScript does not support these features.
+// I don't know why, and I don't know what is an associative array, but well, what do we can do?
+// In JavaScript, arrays always use numbered indexes.
+// Don't use named indexes, because JS will redefine an array to an object.
+
+// Example:
+const persona = [];
+persona[0] = 'Felix';
+persona[1] = 'Fecit';
+persona[2] = 18;
+console.log(persona.length);
+console.log(persona[0]);
