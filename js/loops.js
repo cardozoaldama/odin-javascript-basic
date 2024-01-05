@@ -61,3 +61,6 @@ function draw()
         ctx.fill();
     }
 }
+
+// Add an event to the button element with 'click' and invoke the draw() function.
+btn.addEventListener('click', draw);
