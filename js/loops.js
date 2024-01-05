@@ -56,6 +56,16 @@ function draw()
         ctx.fill();
     }
 }
+// Creating toUpper() function for dogs and so on.
+function toUpper(string)
+{
+    return string.toUpperCase();
+}
+// Creating bDog() function for filtering dogs with the letter B.
+function bDog(dog)
+{
+    return dog.startsWith('B');
+}
 /* Drawing 100 random circles in the screen. */
 // Declare a constant button selecting from the document the button element.
 const btn = document.querySelector('button');
@@ -88,3 +98,20 @@ for (const dog of dogs)
 {
     console.log(dog);
 }
+// Map and Filter.
+// Those things are specialized loops for collections.
+// You can use map() to do something to each item in a collection and create a new collection containing the changed items:
+const upperDogs = dogs.map(toUpper);
+// You literally pass a function into dogs.map();
+console.log(upperDogs);
+// ["GOLDEN RETRIEVER", "DACHSHUND", "SIBERIAN HUSKY", "POODLE", "BULLDOG", "BORDER COLLIE"]
+// You can use filter() to test each item in a collection, and create a new collection containing only items that match:
+const filteredDogs = dogs.filter(bDog);
+// Looks like map() here, however in return we receive a boolean.
+console.log(filteredDogs);
+// ["Bulldog", "Border Collie"]
+
+// We can use these tools like arrow functions.
+const filtered = dogs.filter((dog) => dog.startsWith('D'));
+console.log(filtered);
+// ["Dachshund"]
