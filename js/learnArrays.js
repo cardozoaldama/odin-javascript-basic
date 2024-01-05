@@ -161,3 +161,82 @@ const example2 = new Array(50);
 // Use `instanceof` if a variable is actually an array.
 // This example returns true:
 console.log(gtaBox instanceof Array);
+
+/* Basic Array Methods built-in in JavaScript */
+// By the way, comment this code if you don't want to clear your console.
+console.clear();
+// The famous length property, and it is not actually a method but you got the idea.
+console.log(gtaBox.length);
+// Convert an array to a string.
+console.log(gtaLocations.toString());
+// This is new... Introduced in ES2022.
+// Get the third element of gtaWeapons[] using at():
+console.log(gtaWeapons.at(2));
+// Before we get into something, you can access end elements with at() because JavaScript doesn't support this kind of operation: [-1].
+// Get the last element in gtaWeapons[]:
+console.log(gtaWeapons.at(-1));
+// You can add something with join() intro a string.
+console.log(gtaLocations.join(' - '));
+// Output: Chinatown - Groove Street - El Corona
+// Popping and Pushing:
+// Popping items out of an array, or pushing items into an array.
+// It is like... I don't remember right now.
+// Pop() method removes the last element from an array.
+// Push() method adds a new element to an array (at the end... One think, I don't know why...)
+console.log(gtaCars.pop());     // Returns the last element what has been popped.
+console.log(gtaCars.push('Bobcat'));
+// Please, come back, Sultan.
+// Subaru: * Shoots * My name is not Sultan, kid...
+console.log(gtaCars.push('Subaru'));
+// You can shifting elements, pop() does back, shifting does front.
+console.log(gtaCars.shift());       // Banshee is gone!
+// We got unshift() too!
+// Come back Banshee!
+console.log(gtaCars.unshift('Banshee'));
+// You can delete elements in an array with delete(), but using it leaves undefined holes in the actual array.
+delete gtaLocations[2];
+// Now the last position (number 2) is undefined.
+console.table(gtaLocations);
+// Recommendation: Use pop() or shift() instead.
+// Concatenate arrays using concat() method.
+// This method returns a new array, so you cannot change the values of your actually array.
+// But first, let's add a location in our gtaLocation.
+gtaLocations[2] = 'Glen Park';
+// Now, we can concatenate our arrays.
+console.table(gtaLocations.concat(gtaCars));
+// Try to concatenate all!
+console.table(gtaWeapons.concat(gtaCars, gtaLocations, gtaCitizen));
+// You can copy array elements to another position in an array:
+console.table(gtaCitizen.copyWithin(3, 0));
+// This method of copyWithin() overwrites the existing values, does not add items to the array, and does not change the length of the array.
+// Flattening an Array:
+// It is the process of reducing the dimensionality of an array.
+// Useful when you want to convert a multi-dimensional array into a one-dimensional array.
+// The method is flat() and it was introduced by ES2019.
+const myMultiArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+console.table(myMultiArray);
+// Let's create it as one-dimensional one.
+const newArray = myMultiArray.flat();
+console.table(newArray);
+// Splicing and Slicing arrays:
+// Splice() method adds new items to an array.
+// Slice() method slices out a piece of an array.
+// Why is this? The 1 said where start to add elements...
+// The 0 said where to remove items.
+// The rest are values.
+gtaCars.splice(1, 0, 'Rancher', 'Sanchez');
+console.table(gtaCars);
+// You can remove your elements with splice():
+gtaCars.splice(1, 2); // We need give a try to eliminate Rancher and Sanchez.
+console.table(gtaCars);
+// It is working!
+// We got a new kid in town! toSpliced():
+// ES2023 added this method as a safe way to splice an array without altering the original array.
+// toSpliced() creates a new array, keeping the original array unchanged.
+console.table(gtaCars.toSpliced(1, 0, 'Rancher', 'Sanchez'));
+// Slice() method slices out a piece of an array into a new array:
+console.table(gtaWeapons.slice(2));
+// This method creates a new array.
+// This method does not remove any elements from the source array.
+// You can define the start and the end of your slice.
+console.table(gtaBox.slice(0, 2));
