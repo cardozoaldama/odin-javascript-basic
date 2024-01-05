@@ -94,3 +94,12 @@ gtaBox[2] = gtaLocations;
 gtaBox[3] = gtaWeapons;
 // It is beautifully. Looks like a matrix or something.
 console.table(gtaBox);
+
+/* Array properties and methods */
+// You have built-in array properties and methods here, in JavaScript!
+console.log(gtaBox.length);     // Returns the number of elements.
+console.log(gtaWeapons.sort());   // Sorts the array.
+// Also, you can access the first element like this:
+console.log(gtaBox[0]);
+// And the last element like this:
+console.log(gtaBox[gtaBox.length - 1]);
