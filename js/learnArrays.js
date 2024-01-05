@@ -137,3 +137,27 @@ persona[1] = 'Fecit';
 persona[2] = 18;
 console.log(persona.length);
 console.log(persona[0]);
+
+/* The difference between arrays and objects */
+// Arrays are numbered indexes.
+// Objects are named indexes.
+
+// Use objects when you want the element names to be strings.
+// Use arrays when you want the elements name to be numbers.
+
+// Remember: JS has a built-in array constructor `new Array()`.
+// Use the literal instead:
+const points = new Array();
+const commas = [];
+// These are the same form of array creation.
+
+// This creation...
+const example1 = [50];
+// is not the same as:
+const example2 = new Array(50);
+// The example1 creates an array with one element, and element's value is 40.
+// The example2 creates an array with 50 undefined elements.
+
+// Use `instanceof` if a variable is actually an array.
+// This example returns true:
+console.log(gtaBox instanceof Array);
