@@ -25,3 +25,8 @@ gtaCitizen[1] = 'Male06';
 gtaCitizen[2] = 'Female09';
 
 // A good practice is declaring an array with `const`.
+
+/* Creating arrays with `new` keyword. */
+// From the constant `gtaLocations` create an new array with these values:
+const gtaLocations = new Array('Chinatown', 'Groove Street', 'El Corona');
+// All of these methods are same, so we can use array literal method instead of this.
