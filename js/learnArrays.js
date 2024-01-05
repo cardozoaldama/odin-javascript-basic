@@ -30,3 +30,12 @@ gtaCitizen[2] = 'Female09';
 // From the constant `gtaLocations` create an new array with these values:
 const gtaLocations = new Array('Chinatown', 'Groove Street', 'El Corona');
 // All of these methods are same, so we can use array literal method instead of this.
+
+/* Accessing Array Elements */
+
+// The index number is the key and you can put inside of it whatever you like.
+// Of course, numbers it must be.
+let person1 = gtaCitizen[2];
+// The printing out must be the third element.
+console.log(person1);
+// The index starts with 0, the second element is 1.
