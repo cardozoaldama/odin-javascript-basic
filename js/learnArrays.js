@@ -47,3 +47,9 @@ console.log(gtaCitizen[0]);
 // Changing now the content.
 gtaCitizen[0] = 'Female01';
 console.log(gtaCitizen[0]);
+
+/* Converting an Array to a String */
+
+// Use the method `toString()` that converts an array to a string of (comma separated) array values.
+// Using console.log() should work for now.
+console.log(gtaWeapons.toString());
