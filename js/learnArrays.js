@@ -39,3 +39,11 @@ let person1 = gtaCitizen[2];
 // The printing out must be the third element.
 console.log(person1);
 // The index starts with 0, the second element is 1.
+
+/* Changing an Array Element */
+
+// For some reason you could change a value from given index in an array.
+console.log(gtaCitizen[0]);
+// Changing now the content.
+gtaCitizen[0] = 'Female01';
+console.log(gtaCitizen[0]);
