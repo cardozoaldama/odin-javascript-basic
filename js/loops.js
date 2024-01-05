@@ -23,3 +23,11 @@ document.addEventListener('DOMContentLoaded', () =>
     // The height of our canvas, get from the height of the client document.
     canvas.height = document.documentElement.clientHeight;
 });
+// Create a function called random() which returns a result.
+function random(number)
+{
+    // Multiply random (i.e. 0.53452542) with X (number).
+    const result = Math.floor(Math.random() * number);
+    // Return the result:
+    return result;
+}
