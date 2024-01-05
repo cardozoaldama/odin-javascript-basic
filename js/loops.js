@@ -73,3 +73,18 @@ document.addEventListener('DOMContentLoaded', () =>
 });
 // Add an event to the button element with 'click' and invoke the draw() function.
 btn.addEventListener('click', draw);
+
+/* LOOPING THROUGH A COLLECTION */
+// Remember what is something that is ordered and is a collection?
+// It is: Arrays!
+// That is one type of collection, of course.
+// Set and Map are collections too.
+
+// The For Of Loop.
+// It is a basic tool and you can loop with this through a collection.
+const dogs = ['Golden Retriever', 'Dachshund', 'Siberian Husky', 'Poodle', 'Bulldog', 'Border Collie'];
+// For each elements in dogs[] assign that element in dog.
+for (const dog of dogs)
+{
+    console.log(dog);
+}
