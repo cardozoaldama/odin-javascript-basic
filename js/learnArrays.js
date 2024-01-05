@@ -81,3 +81,16 @@ box.firstName = 'John';
 // Now, print the results.
 console.log(someone[0], someone[1]);
 console.log(box.firstName, box.lastName);
+
+/* Array elements can be Objects */
+// Arrays are so special in JavaScript and you can have objects in an array, functions in an array, arrays in an array... Awesome.
+// Your variables could be objects.
+// Let's create a box which has arrays in an array.
+const gtaBox = [];
+// Literally, the whole array in array.
+gtaBox[0] = gtaCars;
+gtaBox[1] = gtaCitizen;
+gtaBox[2] = gtaLocations;
+gtaBox[3] = gtaWeapons;
+// It is beautifully. Looks like a matrix or something.
+console.table(gtaBox);
