@@ -103,3 +103,22 @@ console.log(gtaWeapons.sort());   // Sorts the array.
 console.log(gtaBox[0]);
 // And the last element like this:
 console.log(gtaBox[gtaBox.length - 1]);
+
+/* Adding array elements */
+// Use push() method and it is easy to use.
+// Before:
+console.table(gtaWeapons);
+// After:
+gtaWeapons.push('Deagle');
+console.table(gtaWeapons);
+// You can add new elements using the length property:
+// Before:
+console.table(gtaCitizen);
+// After:
+gtaCitizen[gtaCitizen.length] = 'Male11';
+console.table(gtaCitizen);
+// Carefully don't add highest indexes because you will get in trouble with undefined values by empty holes in an array!
+console.log(gtaCars[434]);      // Undefined.
+const testingUndefinedArray = ['A', 'B', 'C', 'D'];
+testingUndefinedArray[44] = 'Yes';
+console.table(testingUndefinedArray); // From 4 to 43 is undefined. XD
