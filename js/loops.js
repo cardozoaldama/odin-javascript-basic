@@ -115,3 +115,25 @@ console.log(filteredDogs);
 const filtered = dogs.filter((dog) => dog.startsWith('D'));
 console.log(filtered);
 // ["Dachshund"]
+
+/* Doing a countdown from 10 to 0 */
+// If it is ten, the output must be: "Countdown 10";
+// If it is zero, the output must be: "Blast Off!";
+// If it is other number, just print the number.
+
+console.log('Countdown Numbers!');
+
+for (let i = 10; i >= 0; i--)
+{
+    switch (i)
+    {
+        case 10:
+            console.log('Countdown', 10);
+            break;
+        case 0:
+            console.log('Blast Off!');
+            break;
+        default:
+            console.log(i);
+    }
+}
