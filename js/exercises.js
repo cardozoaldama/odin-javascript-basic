@@ -22,3 +22,30 @@ number2 = parseInt(number2);
 product = number1 * number2;
 // Print out the result in an alert().
 alert('The result of ' + number1 + ' * ' + number2 + ' is: ' + product);
+
+/*
+Write pseudo code that tells a user that the number they entered is not a 5 or a 6
+*/
+
+// Input: One number.
+// Output: A message that tells a user that the number entered isn't a 5 or a 6.
+
+// Create a variable:
+let numberUser = 0;
+// Ask for the user to enter a number and assign to numberUser.
+numberUser = prompt('Please, enter a number five or a number six.');
+// Converts numberUser in Integer.
+numberUser = parseInt(numberUser);
+// Create a conditional if that numberUser is actually 5 or 6.
+if (numberUser == 5)
+{
+    alert('The number entered is a five!');
+}
+else if (numberUser == 6)
+{
+    alert('The number entered is a six!');
+}
+else
+{
+    alert('NO! The number entered is not actually a five or a six.');
+}
