@@ -158,3 +158,10 @@ while(i++ < 5) console.log(i);
 // 4°: i++ = 3 and it is less than 5, so: 4.
 // 5°: i++ = 4 and it is less than 5, so: 5.
 // 6°: i++ = 5 and it is NOT less than 5, so: FALSE.
+
+console.log('For Loop:');
+// FOR Loop.
+// Prefix:
+for(let i = 0; i < 5; ++i) console.log(i);
+// Postfix:
+for(let i = 0; i < 5; i++) console.log(i);
