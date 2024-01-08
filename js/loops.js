@@ -189,3 +189,19 @@ while (iterator < 3)
     console.log(`Number: ${iterator}!`);
     iterator++;
 }
+
+// Repeat until the input is correct:
+let inputNumber
+console.log('Repeat until the input is correct.');
+do {
+    inputNumber = parseInt(prompt('Enter a number greater than 100.'));
+    if (inputNumber <= 100)
+    {
+        console.log('NOPE! You have done bad.', inputNumber);
+        console.log('I want your input a number more than 100.');
+    }
+    else
+    {
+        console.log('YAY! Now that is what we are talking about!', inputNumber);
+    }
+} while (inputNumber <= 100);
