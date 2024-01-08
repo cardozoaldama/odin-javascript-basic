@@ -80,3 +80,30 @@ else
 {
     alert('Blue');
 }
+
+/*
+Write pseudo code to print all multiples of 5 between 1 and 100 (including both 1 and 100).
+*/
+
+// Input: Anything.
+// Output: Multiples of 5 between 1 and 100 (including them).
+
+// Create a mini title:
+console.log('All multiples of 5 between 1 and 100:')
+// Create a variable that you can use as multiple of 5.
+let multipleNumber = 5;
+// Create an iterator.
+let i = 1;
+// Create a stop number.
+let stopNumber = 100;
+// While i is less or equal to 100:
+while (i <= stopNumber)
+{
+    if (i % multipleNumber != 0)
+    {
+        i++;
+        continue;
+    }
+    console.log(i);
+    i++;
+}
