@@ -137,3 +137,24 @@ for (let i = 10; i >= 0; i--)
             console.log(i);
     }
 }
+
+// Exercise: Which values does the while loop show?
+
+let i = 0;
+// i = 0;
+// Prefix:
+while(++i < 5) console.log(i);
+// 1°: ++i = 1 and it is less than 5, so: 1.
+// 2°: ++i = 2 and it is less than 5, so: 2.
+// 3°: ++i = 3 and it is less than 5, so: 3.
+// 4°: ++i = 4 and it is less than 5, so: 4.
+// 5°: ++i = 5 and it is NOT less than 5, so: FALSE.
+i = 0;
+// Postfix:
+while(i++ < 5) console.log(i);
+// 1°: i++ = 0 and it is less than 5, so: 1.
+// 2°: i++ = 1 and it is less than 5, so: 2.
+// 3°: i++ = 2 and it is less than 5, so: 3.
+// 4°: i++ = 3 and it is less than 5, so: 4.
+// 5°: i++ = 4 and it is less than 5, so: 5.
+// 6°: i++ = 5 and it is NOT less than 5, so: FALSE.
