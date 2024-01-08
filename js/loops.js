@@ -174,3 +174,18 @@ for(let i = 0; i <= 10; i++)
     if (i % 2 != 0) continue;
     console.log(i);
 }
+
+console.log('Replace "for" with "while":');
+// Replace "for" with "while":
+/*
+for (let i = 0; i < 3; i++)
+{
+    console.log(`Number: ${i}!`);
+}
+*/
+let iterator = 0;
+while (iterator < 3)
+{
+    console.log(`Number: ${iterator}!`);
+    iterator++;
+}
