@@ -205,3 +205,19 @@ do {
         console.log('YAY! Now that is what we are talking about!', inputNumber);
     }
 } while (inputNumber <= 100);
+
+// Output prime numbers:
+let n = 555;                 // "n" is prime?
+iterator = 2;
+while (iterator <= Math.sqrt(n) && (n % iterator != 0))
+{
+    iterator++;
+}
+if (iterator > Math.sqrt(n))
+{
+    console.log('It is prime:', n);
+}
+else
+{
+    console.log('It is not prime:', n);
+}
