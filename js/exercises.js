@@ -49,3 +49,34 @@ else
 {
     alert('NO! The number entered is not actually a five or a six.');
 }
+
+/*
+Write pseudo code that performs the following: Ask a user to enter a number. If the number is between 0 and 10, write the word blue. If the number is between 10 and 20, write the word red. If the number is between 20 and 30, write the word green. If it is any other number, write that it is not a correct color option.
+*/
+
+// Input: A number.
+// Output: If number between 0 and 10, blue. Between 10 and 20, red. Between 20 and 30, green. Other number is not a correct color option.
+
+// Create a variable as integer called numberColor.
+let numberColor = 0;
+// Ask for the user to enter a number.
+numberColor = prompt('Enter a number, please.');
+// Convert numberColor in an integer.
+numberColor = parseInt(numberColor);
+// Conditionals.
+if (numberColor < 0 || numberColor > 30)
+{
+    alert('It is not a correct color option...');
+}
+else if (numberColor >= 20 && numberColor <= 30)
+{
+    alert('Green');
+}
+else if (numberColor >= 10 && numberColor <= 20)
+{
+    alert('Red');
+}
+else
+{
+    alert('Blue');
+}
