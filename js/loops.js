@@ -165,3 +165,12 @@ console.log('For Loop:');
 for(let i = 0; i < 5; ++i) console.log(i);
 // Postfix:
 for(let i = 0; i < 5; i++) console.log(i);
+
+// Output even numbers:
+console.log('Even numbers from 2 to 10:');
+for(let i = 0; i <= 10; i++)
+{
+    // We can ignore curly braces if there is just one statement:
+    if (i % 2 != 0) continue;
+    console.log(i);
+}
