@@ -27,3 +27,12 @@ div.setAttribute('id', 'theDiv');
 console.dir(div.getAttribute('style'));
 div.textContent = 'This is a new div from JavaScript.';
 div.innerHTML = '<span>This is my generated span...</span>';
+
+// Another example we will using:
+const container2 = document.querySelector('#container2');
+
+const content2 = document.createElement('p');
+content2.classList.add('content2');
+content2.textContent = 'This is the glorious text-content!';
+
+container2.appendChild(content2);
