@@ -81,3 +81,14 @@ btn.addEventListener('click', function(e) {
     console.log(e.layerX);
     e.target.style.backgroundColor = 'blue';
 });
+
+// Attaching a group of nodes.
+// NodeList for buttons.
+const buttons = document.querySelectorAll('button');
+// We could use forEach() method to iterate each element.
+buttons.forEach((button) => {
+    // Each of those buttons we add an event.
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
