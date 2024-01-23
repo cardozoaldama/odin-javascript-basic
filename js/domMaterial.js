@@ -75,8 +75,8 @@ divPink.appendChild(pInsideDiv);
  * On the DOM nodes in your JavaScript.
  * You can attach event listeners to the DOM nodes in your JavaScript.
  */
-// Using events with 'BTN':
+// Using events with 'BTN' and addEventListener:
 const btn = document.querySelector('#btn');
-// Create from btn an event which is oneClick:
-btn.onclick = () => alert('Hello World.');
-btn.onpointerover = () => console.log('Pointer Over...');
+btn.addEventListener('click', () => {
+    alert('Hello World!');
+});
