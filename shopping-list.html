@@ -31,7 +31,29 @@
     </ul>
 
     <script>
-
+      // Create references as constants:
+      const uList = document.querySelector('ul');
+      const inputText = document.querySelector('#item');
+      const button = document.querySelector('button');
+      button.addEventListener('click', () => {
+        // Create three elements: li, span, and button.
+        const list = document.createElement('li');
+        const span = document.createElement('span');
+        const buttonDelete = document.createElement('button');
+        // Put the value of the input text in a variable.
+        let text = inputText.value;
+        inputText.value = '';
+        span.textContent = text;
+        buttonDelete.textContent = 'Delete';
+        inputText.focus();
+        // Append span and button in list:
+        list.appendChild(span);
+        list.appendChild(buttonDelete);
+        uList.appendChild(list);
+        buttonDelete.addEventListener('click', () => {
+          uList.removeChild(list);
+        });
+      });
     </script>
   </body>
 </html>
