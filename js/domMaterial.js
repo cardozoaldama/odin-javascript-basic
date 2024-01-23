@@ -65,3 +65,13 @@ const pInsideDiv = document.createElement('p');
 pInsideDiv.textContent = 'ME TOO!';
 divPink.appendChild(pInsideDiv);
 // End of these exercises.
+
+/* EVENTS */
+// Events are a kind of magic, kinda. It is like when something is actioned, it is appeared something.
+// In a webpage, you can listen and react to these events.
+// Three primary ways to do this:
+/**
+ * Specify functions attributes directly on HTML elements. You can set properties of form on[eventType].
+ * On the DOM nodes in your JavaScript.
+ * You can attach event listeners to the DOM nodes in your JavaScript.
+ */
