@@ -47,3 +47,15 @@ const h3Blue = document.createElement('h3');
 h3Blue.textContent = 'I\'m a blue h3!';
 h3Blue.style.color = 'blue';
 container2.appendChild(h3Blue);
+
+const divPink = document.createElement('div');
+divPink.style.backgroundColor = 'pink';
+divPink.style.border = '1px solid black';
+container2.appendChild(divPink);
+// Insert contents inside of divPink.
+const h1InsideDiv = document.createElement('h1');
+h1InsideDiv.textContent = 'I\'m in a div';
+divPink.appendChild(h1InsideDiv);
+const pInsideDiv = document.createElement('p');
+pInsideDiv.textContent = 'ME TOO!';
+divPink.appendChild(pInsideDiv);
