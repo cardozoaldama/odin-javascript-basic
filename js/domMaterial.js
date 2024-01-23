@@ -36,3 +36,9 @@ content2.classList.add('content2');
 content2.textContent = 'This is the glorious text-content!';
 
 container2.appendChild(content2);
+
+// A little exercise:
+const paraRed = document.createElement('p');
+paraRed.textContent = 'Hey I\'m red!';
+paraRed.style.color = 'red';
+container2.appendChild(paraRed);
