@@ -77,6 +77,10 @@ divPink.appendChild(pInsideDiv);
  */
 // Using events with 'BTN' and addEventListener:
 const btn = document.querySelector('#btn');
-btn.addEventListener('click', () => {
+btn.addEventListener('click', alertHelloWorld);
+
+// Creating a function and use it along with addEventListener:
+function alertHelloWorld()
+{
     alert('Hello World!');
-});
+}
