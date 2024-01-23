@@ -38,24 +38,30 @@ content2.textContent = 'This is the glorious text-content!';
 container2.appendChild(content2);
 
 // A little exercise:
+// Create a paragraph with red color inside of the second container.
 const paraRed = document.createElement('p');
 paraRed.textContent = 'Hey I\'m red!';
 paraRed.style.color = 'red';
 container2.appendChild(paraRed);
 
+// Insert a h3 with blue color inside of the second container.
 const h3Blue = document.createElement('h3');
 h3Blue.textContent = 'I\'m a blue h3!';
 h3Blue.style.color = 'blue';
 container2.appendChild(h3Blue);
 
+// Create a div with pink background and black borders, inside of the second container.
 const divPink = document.createElement('div');
 divPink.style.backgroundColor = 'pink';
 divPink.style.border = '1px solid black';
 container2.appendChild(divPink);
 // Insert contents inside of divPink.
+// Create a h1 inside of pink div.
 const h1InsideDiv = document.createElement('h1');
 h1InsideDiv.textContent = 'I\'m in a div';
 divPink.appendChild(h1InsideDiv);
+// Also, create a p inside of pink div too.
 const pInsideDiv = document.createElement('p');
 pInsideDiv.textContent = 'ME TOO!';
 divPink.appendChild(pInsideDiv);
+// End of these exercises.
