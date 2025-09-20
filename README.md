@@ -10,7 +10,7 @@ Then I will create another repository for more advance stuff. It's free!
 
 About what theory? Simple, it is about Problem Solving and Understanding Errors.
 
-The Problem Solving is important when you want to develop something, it is an important skill. 
+The Problem Solving is important when you want to develop something, it is an important skill.
 
 ## What is the next step?
 
