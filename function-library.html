@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -12,79 +12,14 @@
   </style>
   </head>
 <body>
-  <!-- An input text that the user enter a number, or a sequence of numbers: -->
+
   <input class="numberInput" type="text">
-  <!-- The "paragraph" will be the result of the "calc" functions: -->
   <p></p>
 
   <script>
-    // Obtaining data from the HTML document:
-    // The .numberInput and "p" element:
     const input = document.querySelector('.numberInput');
     const para = document.querySelector('p');
-    // Functions:
-    // Squared function with one parameter, num:
-    function squared(num)
-    {
-      // Using Math object with "pow" method:
-      return Math.pow(num, 2);
-    }
-    // Cubed function with one parameter, num:
-    function cubed(num)
-    {
-      // Again, use Math object with its "pow" method:
-      return Math.pow(num, 3);
-    }
-    // Factorial of a number:
-    function factorial(num)
-    {
-      // A function ends when a return statement is invoke or run.
-      // Remember to return numbers or data.
-      // If a number is less than zero, it's undefined:
-      if (num < 0) return undefined;
-      // If a number is equal to zero, it will be just one:
-      if (num === 0) return 1;
-      // If "num" is greater than 0:
-      // Subtract your num minus one and assign to "x":
-      let x = num - 1;
-      // While your "x" is greater than 1, do this:
-      while (x > 1)
-      {
-        // Multiply your "num" to "x":
-        num *= x;
-        // And subtract your "x" by one:
-        x--;
-        // The "while()" statement ends when "x" is equal or less than 1.
-      }
-      // Returns your number:
-      return num;
-    }
-    // EVENT LISTENERS HANDLER:
-    // Adding an event listener of type "change":
-    // Also, using an anonymous function of type 'arrow':
-    input.addEventListener('change', () => {
-      // Creating a constant number with float date type:
-      // We need the value of the input.
-      const num = parseFloat(input.value);
-      // If is not a number our "num" variable:
-      if (isNaN(num))
-      {
-        // TRUE
-        // In the paragraph, we put this text content:
-        // By the way, para.textContent, our "textContent" is an attribute.
-        para.textContent = 'You need to enter a number!';
-      }
-      else
-      {
-        // FALSE
-        // Square Function:
-        para.textContent = `${num} squared is ${squared(num)}`;
-        // Cube Function:
-        para.textContent += `${num} cubed is ${cubed(num)}`;
-        // Factorial Function:
-        para.textContent += `${num} factorial is ${factorial(num)}`;
-      }
-    });
+
   </script>
 </body>
 </html>
