@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -8,36 +8,19 @@
 <body>
 
   <script>
-    /* CAREFUL! This code has scope functions error somewhere... */
-
-    // It's the global scope:
     const x = 1;
 
-    // Function A:
     function a() {
-      // Local Scope.
       const y = 2;
-      // Try to get constant "z" from b() function:
-      output(z);
     }
 
-    // Function B:
     function b() {
-      // Local Scope:
       const z = 3;
-      // Trying to get constant "y" from a() function:
-      output(y);
     }
 
-    // Function called OUTPUT: 
-    // It accepts one parameter. The parameter is "value":
     function output(value) {
-      // A constant "para" which creates a "p" element:
       const para = document.createElement('p');
-      // In the body of the document, append a "para" inside of it.
-      // Creates new "para" if it needed.
       document.body.appendChild(para);
-      // The "para" will have the text: "Value: 3", for example.
       para.textContent = `Value: ${value}`;
     }
   </script>
