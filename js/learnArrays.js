@@ -103,6 +103,8 @@ console.log(gtaWeapons.sort());   // Sorts the array.
 console.log(gtaBox[0]);
 // And the last element like this:
 console.log(gtaBox[gtaBox.length - 1]);
+// Or the new form with at():
+console.log(gtaBox.at(-1));
 
 /* Adding array elements */
 // Use push() method and it is easy to use.
