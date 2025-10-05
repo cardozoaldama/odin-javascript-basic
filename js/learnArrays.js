@@ -71,7 +71,7 @@ const someone = ['John', 'Smith', 66];
 // You can access someone's name or last name with numbers.
 console.log(someone[0], someone[1]);        // John Smith
 // An example of an object:
-const box = {firstName: 'Alex', lastName: 'Smith', age: 46};
+const box = { firstName: 'Alex', lastName: 'Smith', age: 46 };
 // You can access box's name or last name by members:
 // I think you can print like this:
 console.log(box.firstName, box.lastName);
