@@ -261,3 +261,4 @@ function sumOfTripledEvens(array) {
 
 const arr = [1, 2, 3, 4, 5];
 console.log(arr.map(num => num + 1)); // Outputs [2, 3, 4, 5, 6]
+console.log(arr.filter(num => num % 2 !== 0)); // Outputs [1, 3, 5]
