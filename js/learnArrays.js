@@ -245,9 +245,10 @@ console.table(gtaBox.slice(0, 2));
 // That is all for arrays, soon we gonna learn about loops.
 
 function sumOfTripledEvens(array) {
-    const newArrayEvenValues = array.filter(num => num % 2 === 0);
-    const newArrayTripledEvens = newArrayEvenValues.map(num => num * 3);
-    return newArrayTripledEvens;
+    return array
+        .filter(num => num % 2 === 0)
+        .map(num => num * 3)
+        .reduce((num, total) => num + total);
 }
 
 const arr = [1, 2, 3, 4, 5];
