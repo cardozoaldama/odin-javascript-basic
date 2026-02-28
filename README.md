@@ -14,4 +14,4 @@ The Problem Solving is important when you want to develop something, it is an im
 
 ## What is the next step?
 
-The next step is practicing about DOM and some basic events.
+The next step is practicing about DOM and some basic events. More in future, we can learn about objects.
